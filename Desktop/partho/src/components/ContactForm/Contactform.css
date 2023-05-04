@@ -1,0 +1,32 @@
+.Contact{
+    padding: 0 0 1rem;
+}
+.Form{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 1rem;
+    margin:auto;
+    max-width: 750px;
+}
+label{
+    color:var(--white-text);
+    margin-bottom: .5rem;
+}
+.Contact>.Form input, .Contact>.Form textarea{
+    margin-bottom: 1rem;
+    padding: .75rem 1rem;
+    font-size: 1rem;
+    background: var(--white-text);
+    border: 1px solid var(--dark-text) ;
+    border-radius: 10px;
+    color: var(--dark-text);
+}
+.Contact>.Form input:hover, .Contact>.Form textarea:hover,
+.Contact>.Form input:focus, .Contact>.Form textarea:focus{
+    border: 1px solid var(--white-text) ;
+    box-shadow: var(--box-shadow);
+}
+.Form .btn{
+    max-width: 50%;
+    margin: 1rem 0;
+}

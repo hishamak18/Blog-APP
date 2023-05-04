@@ -1,0 +1,36 @@
+.homebackground{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+.bgImg1{
+    display: block;  
+    margin-top: 3rem;
+}
+.bgImg1 img{
+    position: relative;
+    left: 10%;
+    width: 4.5rem;
+ }
+.bgImg2{
+    display: flex;
+    justify-content: flex-end;
+}
+.bgImg2 img{
+    position: relative;
+    width: 4rem;
+    right: 10%;
+ }
+
+
+ @media (max-width:991px){
+    .bgImg1 img{   
+        left: 4%
+     }
+     .bgImg2 img{
+        right: 4%;
+     }
+}
+

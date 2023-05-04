@@ -1,0 +1,77 @@
+.aboutCenter{
+    padding: 8rem 0;
+}
+.aboutCenterheader{
+    padding: 2rem 4rem 7rem;
+    text-align: center;    
+}
+.aboutCenterheader>h3{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--white-text);
+}
+.aboutCentergrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: var(--white-text);
+}
+.gridLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 100%;
+    padding: 4rem 5rem 2rem 10rem;
+}
+.gridRight{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 100%;
+    padding: 4rem 3rem 2rem 5rem;
+    background: var(--bg-color-glass);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+.title{
+    font-size: .85rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    width: 100%;  
+    gap: .5rem;
+    text-transform: uppercase;
+}
+.title>span{
+    width: 2rem; 
+    height: 1.5rem;
+    margin-top: -1.5rem;
+    display: inline-block;
+    font-size: .85rem;
+    font-weight: 500;
+    letter-spacing: 2px; 
+    border-bottom:2px solid gray ;
+}
+
+.gridLeft>div>p,
+.gridRight>div>p{
+    font-size: .85rem;
+    line-height: 1.75rem;
+}
+
+@media (max-width:991px){
+    .gridLeft, .gridRight{
+        padding: 4rem 3rem 2rem 5rem;
+    }
+}
+@media (max-width:760px){
+    .aboutCentergrid{
+        grid-template-columns: repeat(1, 1fr);   
+    }
+    .gridLeft{
+        padding: 4rem 5rem 2rem 7rem;
+    }
+    .gridRight{
+        padding: 4rem 3rem 2rem 5rem;
+    }
+}

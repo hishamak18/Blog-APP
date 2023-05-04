@@ -1,0 +1,39 @@
+.Aboutbottom{
+    padding: 3rem 0;
+    color: var(--white-text);
+}
+.bottombgd{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1;
+    height: 40vh;
+    background:#7f1e7c15;
+}
+.bottombgdImg{
+    width: 17rem;
+    height: 8rem;
+    margin-right: 5%;
+    background: #7F4129;
+}
+.bottomlayer{
+    position: relative;
+    padding: 3rem 50% 3rem 3rem;
+    margin-top: -40vh;
+    z-index: 10;
+    background: var(--bg-color-glass);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    height: 40vh;
+}
+.bottomlayer>.link{
+    color: #dd00ff;
+    text-decoration: none;
+    font-size: .85rem;
+}
+
+@media (max-width:760px){
+    .bottomlayer{
+        padding: 3rem;
+    }
+}

@@ -1,0 +1,30 @@
+.offcanvas{
+    background: url(../../Assets/Path\ 1.svg);
+    background-size: cover;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+.closeButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50px;
+    background-color: var(--white-text);
+    color: var(--dark-text-);
+    z-index: 1;
+    position: relative;
+    left: -2rem;
+}
+.arrow{
+    color: var(--dark-text) ;
+}
+.toggle{
+    color: var(--white-text);
+}
+@media (max-width:760px){
+    .offcanvas{
+        width: 75% !important;
+    }  
+}

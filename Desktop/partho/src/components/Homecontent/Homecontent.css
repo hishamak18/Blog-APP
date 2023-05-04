@@ -1,0 +1,32 @@
+.ContentContainer{
+    padding: 1rem 0 ;
+}
+.hero{
+    padding: 0 1rem;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.hero h1{
+    font-size: 2.5rem;
+    padding: .5rem 3rem;
+    text-transform: uppercase;
+    font-weight: var(--font-bold);
+    color: var(--white-text);
+}
+.hero p{
+    font-size: .75rem;
+    padding: .5rem 5rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: var(--white-text);
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+@media (max-width:760px){
+    .hero h1{
+        font-size: 2rem;}
+}
